@@ -8,6 +8,7 @@ public class Main {
         String password = sc.nextLine();
         double balance=sc.nextDouble();
         SBIuser user = new SBIuser(name,balance,password);
+        System.out.println("the new account no is"+user.getAccountNo());
 
         //add money
         String message = user.addMoney(100000);
@@ -23,6 +24,6 @@ public class Main {
 
         //rate of interest
 
-        System.out.println(user.calculateInterest(10));
+        System.out.println("the interest is "+user.calculateInterest(1));
     }
 }
